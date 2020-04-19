@@ -1,13 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
 
+import 'typeface-montserrat';
+
 export default createGlobalStyle`
   * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 
     font-family: Montserrat, sans-serif;
+
+    outline: 0;
   }
 
   *:focus {
@@ -16,6 +19,10 @@ export default createGlobalStyle`
 
   html, body, #root {
     height: 100%;
+
+    font-size: 62.5%;
+
+    background: ${({ theme }) => theme.colors.background};
   }
 
   body {

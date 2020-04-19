@@ -3,10 +3,11 @@ import { ThemeProvider } from 'styled-components';
 
 import { Global, light, dark, ThemeContext } from '@/theme';
 
+import Aside from '../Aside';
 import { Container } from './styles';
 
-const Layout: React.FC<{}> = () => {
-  const [theme, setTheme] = useState(light);
+const Layout: React.FC = ({ children }) => {
+  const [theme, setTheme] = useState(dark);
 
   const toggleTheme = () => {
     setTheme(theme.title === 'light' ? dark : light);
@@ -18,7 +19,11 @@ const Layout: React.FC<{}> = () => {
         <Global />
 
         <Container>
-          <h1>Hello TypeScript!</h1>
+          <main>{children}</main>
+
+          <aside>
+            <Aside />
+          </aside>
         </Container>
       </ThemeProvider>
     </ThemeContext.Provider>
