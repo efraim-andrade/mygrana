@@ -1,1 +1,3 @@
-export * as formatedDate from './formatedDate';
+import formattedDate from './formattedDate';
+
+export { formattedDate };
