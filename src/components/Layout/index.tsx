@@ -19,11 +19,11 @@ const Layout: React.FC = ({ children }) => {
         <Global />
 
         <Container>
-          <main>{children}</main>
-
           <aside>
             <Aside />
           </aside>
+
+          <main>{children}</main>
         </Container>
       </ThemeProvider>
     </ThemeContext.Provider>

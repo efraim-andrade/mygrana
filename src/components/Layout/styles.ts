@@ -1,15 +1,20 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 100vh;
   width: 100%;
-  max-width: 1600px;
+  height: 100vh;
   margin: 0 auto;
+  max-width: 1600px;
 
   display: grid;
-  grid-template-columns: 0.7fr 0.3fr;
+  grid-column-gap: 2.4rem;
+  grid-template-columns: 0.3fr 0.7fr;
 
   background: ${({ theme }) => theme.colors.background};
+
+  @media screen and (max-width: 1500px) {
+    max-width: 1270px;
+  }
 
   > main {
   }

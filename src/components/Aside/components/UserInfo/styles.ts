@@ -5,18 +5,17 @@ export const Container = styled.div`
   align-items: center;
 
   .info {
-    margin-right: 0.8rem;
+    margin-left: 0.8rem;
 
     > small,
     > strong {
       display: block;
 
-      text-align: right;
       color: ${({ theme }) => theme.colors.text};
     }
 
     > small {
-      margin-bottom: 0.8rem;
+      margin-bottom: 0.4rem;
 
       font-weight: 200;
       font-size: 1.6rem;

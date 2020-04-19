@@ -9,4 +9,19 @@ export const Container = styled.div`
   box-shadow: 0 0 10px rgba(51, 51, 51, 0.15);
 
   background: ${({ theme }) => darken(0.1, theme.colors.background)};
+
+  > .status {
+    > strong {
+      margin-bottom: 1.6rem;
+
+      display: block;
+
+      color: ${({ theme }) => theme.colors.text};
+      font-size: 2.4rem;
+      font-weight: bold;
+      text-transform: capitalize;
+
+      opacity: 0.6;
+    }
+  }
 `;

@@ -6,9 +6,9 @@ import { Container, Icon } from './styles';
 
 const Header: React.FC = () => (
   <Container>
-    <Icon />
-
     <UserInfo />
+
+    <Icon />
   </Container>
 );
 
